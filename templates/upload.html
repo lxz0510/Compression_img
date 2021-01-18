@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form id="form1" method="post" action="/api/upload" enctype="multipart/form-data">
+        <div>
+        <input id="File1" type="file" name="file"/>  <!--后台代码中获取文件是通过form的name来标识的-->
+        <input type="submit">提交</input>
+        </div>
+        ...
+        <div>
+            长度:<input type="text" name="width" oninput = "value=value.replace(/[^\d]/g,'')"/>
+            宽度：<input type="text" name="height" oninput = "value=value.replace(/[^\d]/g,'')"/>
+        </div>
+
+    </form>
+</body>
